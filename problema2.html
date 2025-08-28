@@ -10,7 +10,26 @@
 <body>
     <div class="container">
         <a href="index.html">&larr; Volver al inicio</a>
-        
+        <h2>Selecciona la cantidad de stickers</h2>
+        <div style="display:flex;gap:16px;justify-content:center;align-items:end;">
+            <div style="text-align:center;">
+                <img src="https://static.vecteezy.com/system/resources/previews/010/792/551/large_2x/cute-bear-head-cartoon-element-free-png.png" alt="Sticker 1" style="max-width:100px;">
+                <br>
+                <input id="sticker1" type="number" min="0" max="10" value="0" style="width:50px;">
+            </div>
+            <div style="text-align:center;">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/147/724/non_2x/cute-cat-sticker-style-elements-pro-png.png" alt="Sticker 2" style="max-width:100px;">
+                <br>
+                <input id="sticker2" type="number" min="0" max="10" value="0" style="width:50px;">
+            </div>
+            <div style="text-align:center;">
+                <img src="https://static.vecteezy.com/system/resources/previews/051/064/919/non_2x/a-cute-penguin-sticker-on-transparent-background-png.png" alt="Sticker 3" style="max-width:100px;">
+                <br>
+                <input id="sticker3" type="number" min="0" max="10" value="0" style="width:50px;">
+            </div>
+        </div>
+        <button id="check-stickers" style="margin-top:12px;" onclick="OnClickValidate()">Verificar</button>
+        <p id="stickers-result"></p>
     </div>
     <script src="problema2.js"></script>
 </body>
